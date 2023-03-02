@@ -1,0 +1,17 @@
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\bin\Debug\net6.0\SistemaInventario.AccesoDatos.deps.json
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\bin\Debug\net6.0\SistemaInventario.AccesoDatos.dll
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\bin\Debug\net6.0\SistemaInventario.AccesoDatos.pdb
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\bin\Debug\net6.0\SistemaInventario.Modelos.dll
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\bin\Debug\net6.0\SistemaInventario.Utilidades.dll
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\bin\Debug\net6.0\SistemaInventario.Modelos.pdb
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\bin\Debug\net6.0\SistemaInventario.Utilidades.pdb
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.csproj.AssemblyReference.cache
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.AssemblyInfoInputs.cache
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.AssemblyInfo.cs
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.csproj.CoreCompileInputs.cache
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.csproj.CopyComplete
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.dll
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\refint\SistemaInventario.AccesoDatos.dll
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\SistemaInventario.AccesoDatos.pdb
+F:\Projects\SistemaInventario\SistemaInventario.AccesoDatos\obj\Debug\net6.0\ref\SistemaInventario.AccesoDatos.dll

@@ -1,0 +1,12 @@
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\bin\Debug\net6.0\SistemaInventario.Utilidades.deps.json
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\bin\Debug\net6.0\SistemaInventario.Utilidades.dll
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\bin\Debug\net6.0\SistemaInventario.Utilidades.pdb
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\SistemaInventario.Utilidades.csproj.AssemblyReference.cache
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\SistemaInventario.Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\SistemaInventario.Utilidades.AssemblyInfoInputs.cache
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\SistemaInventario.Utilidades.AssemblyInfo.cs
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\SistemaInventario.Utilidades.csproj.CoreCompileInputs.cache
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\SistemaInventario.Utilidades.dll
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\refint\SistemaInventario.Utilidades.dll
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\SistemaInventario.Utilidades.pdb
+F:\Projects\SistemaInventario\SistemaInventario.Utilidades\obj\Debug\net6.0\ref\SistemaInventario.Utilidades.dll
