@@ -12,15 +12,15 @@ namespace SistemaInventario.Modelos
         [Key]
         public int Id { get; set; }
         
-        [Required(ErrorMessage ="El campo {0} es obligatorio")]
+        [Required(ErrorMessage ="El campo {0} es requerido")]
         [MaxLength(60, ErrorMessage ="{0} debe ser maximo de {1} caracteres")]
         public string Nombre { get; set; }
 
-        [Required(ErrorMessage = "El campo {0} es obligatorio")]
+        [Required(ErrorMessage = "El campo {0} es requerido")]
         [MaxLength(100, ErrorMessage = "{0} debe ser maximo de {1} caracteres")]
         public string Descripcion { get; set; }
 
-        [Required(ErrorMessage = "El campo {0} es obligatorio")]
+        [Required(ErrorMessage = "El campo {0} es requerido")]
         public bool Estado { get; set; }
     }
 }
