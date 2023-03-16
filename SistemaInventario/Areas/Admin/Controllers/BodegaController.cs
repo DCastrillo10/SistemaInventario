@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SistemaInventario.AccesoDatos.Repository.IRepository;
 using SistemaInventario.Modelos;
+using SistemaInventario.Utilidades;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
@@ -36,6 +38,31 @@ namespace SistemaInventario.Areas.Admin.Controllers
             return View(bodega);
         }
 
+        [HttpPost]
+        public async Task<IActionResult> Upsert(Bodega bodega)
+        {
+            if (ModelState.IsValid)
+            {
+                if (bodega.Id == 0)
+                {
+                    await _unitWork.Bodega.Agregar(bodega);
+                    TempData[DS.Exitosa] = "Bodega creada exitosamente";
+                }
+                else
+                {
+                    _unitWork.Bodega.Actualizar(bodega);
+                    TempData[DS.Exitosa] = "Bodega actualizada exitosamente";
+                }
+
+                await _unitWork.Guardar();
+                return RedirectToAction(nameof(Index));
+            }
+            TempData[DS.Error]  = "Error al grabar la Bodega";
+            return View(bodega);
+        }
+
+
+
         #region API
 
         [HttpGet]
@@ -44,6 +71,41 @@ namespace SistemaInventario.Areas.Admin.Controllers
             var todos = await _unitWork.Bodega.ObtenerTodos();
             return Json(new { data = todos });
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var bodegaDB = await _unitWork.Bodega.Obtener(id);
+            if (bodegaDB == null)
+            {
+                return Json(new { success = false, message="Error al eliminar" });
+            }
+            _unitWork.Bodega.Remover(bodegaDB);
+            await _unitWork.Guardar();
+            return Json(new { success = true, message = "Bodega eliminada exitosamente" });
+        }
+
+        [ActionName("ValidarNombre")]
+        public async Task<IActionResult> ValidarNombre(string nombre, int id=0)
+        {
+            bool valor = false;
+            var lista = await _unitWork.Bodega.ObtenerTodos();
+            if (id == 0)
+            {
+                valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim());
+            }
+            else
+            {
+                valor = lista.Any(b => b.Nombre.ToLower().Trim() == nombre.ToLower().Trim() && b.Id != id);
+            }
+
+            if (valor)
+            {
+                return Json(new { data = true });
+            }
+            return Json(new { data = false });
+        }
+
 
         #endregion
     }

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SistemaInventario.AccesoDatos.Repository.IRepository;
+using SistemaInventario.Modelos;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
@@ -17,9 +18,41 @@ namespace SistemaInventario.Areas.Admin.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Upsert(int? id)
+        {
+            Marca marca = new Marca();
+            if (id == null)
+            {
+                return View(marca);
+            }
 
+            marca = await _unitWork.Marca.Obtener(id.GetValueOrDefault());
+            if (marca == null)
+            {
+                return NotFound();
+            }
+            return View(marca);
+        }
 
+        [HttpPost]
+        public async Task<IActionResult> Upsert(Marca marca)
+        {
+            if (ModelState.IsValid)
+            {
+                if (marca.Id == 0)
+                {
+                    await _unitWork.Marca.Agregar(marca);
+                }
+                else
+                {
+                    _unitWork.Marca.Actualizar(marca);
+                }
 
+                await _unitWork.Guardar();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(marca);
+        }
 
         #region API
 
@@ -30,6 +63,21 @@ namespace SistemaInventario.Areas.Admin.Controllers
             return Json(new { data = todos });
         }
 
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var marcaBD = await _unitWork.Marca.Obtener(id);
+            if (marcaBD == null)
+            {
+                return Json(new { success = false, message = "Error al eliminar" });
+            }
+            else
+            {
+                _unitWork.Marca.Remover(marcaBD);
+                await _unitWork.Guardar();
+                return Json(new { success = true, message = "Categoria eliminada exitosamente" });
+            }
+        }
         #endregion
     }
 }

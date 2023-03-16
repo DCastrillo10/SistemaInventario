@@ -1,0 +1,104 @@
+﻿@model SistemaInventario.Modelos.Bodega
+
+@{
+
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var titulo = "Crear Bodega";
+}
+
+<div class="row">
+    <div class="col-lg-6">
+        <h2 class="text-primary">Lista de Bodegas</h2>
+    </div>
+    <div class="col-lg-6 text-right">
+        <button type="button" class="btn btn-secondary border-right" data-toggle="modal" data-target="#modalData"><i class="bi bi-plus-square-fill"></i> Nueva Bodega </button>
+    </div>
+</div>
+
+<div class="p-4 border rounded bg-light">
+    <table id="tblDatos" class="table table-responsive table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Descripcion</th>
+                <th>Estado</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+</div>
+
+<!--Modal-->
+<div class="modal fade" id="modalData" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <form method="post" enctype="multipart/form-data">
+                    <input type="hidden" id="bodegaId" asp-for="Id" />
+                    <div class="row p-3 border-0">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    </div>
+                    @if (Model.Id != 0)
+                    {
+                        //Actualizar
+                        titulo = "Actualizar Bodega";
+                    }
+                    <div class="col-12 border-bottom">
+                        <h2 class="text-primary">@titulo</h2>
+                    </div>
+                    <div class="col-8 pt-4">
+                        <div class="form-group row">
+                            <div class="col-4">
+                                <label asp-for="Nombre"></label>
+                            </div>
+                            <div class="col-8">
+                                <input asp-for="Nombre" class="form-control" id="bodegaNombre" />
+                                <span asp-validation-for="Nombre" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-4">
+                                <label asp-for="Descripcion"></label>
+                            </div>
+                            <div class="col-8">
+                                <input asp-for="Descripcion" class="form-control" id="bodegaDescr" />
+                                <span asp-validation-for="Descripcion" class="text-danger"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-4">
+                                <label asp-for="Estado"></label>
+                            </div>
+                            <div class="col-4">
+                                <select asp-for="Estado" class="form-select" id="bodegaEstado">
+                                    <option value=true>Activo</option>
+                                    <option value=false>Inactivo</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-8 offset-4">
+                                @if (Model.Id != 0)
+                                {
+                                    <partial name="_BotonesActualizarRegresar" model="Model.Id" />
+                                }
+                                else
+                                {
+                                    <partial name="_BotonesCrearRegresar" />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+
+    <partial name="_ValidationScriptsPartial"/>
+    <script src="~/js/bodega.js"></script>
+}
+

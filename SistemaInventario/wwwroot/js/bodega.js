@@ -2,6 +2,10 @@
 
 $(document).ready(function () {
     loadDataTable();
+    var id = document.getElementById("bodegaId");
+    if (id.value > 0) {
+        $("#modalData").modal('show');
+    }
 });
 
 function loadDataTable() {
@@ -56,5 +60,31 @@ function loadDataTable() {
             ]
 
 
+    });
+}
+
+function Delete(url) {
+    swal({
+        title: "Esta seguro que quiere eliminar la bodega?",
+        text: "Este registro no se podrá recuperar",
+        icon: "warning",
+        buttons: true,
+        dangerMode: true
+    }).then((borrar) => {
+        if (borrar) {
+            $.ajax({
+                type: "DELETE",
+                url: url,
+                success: function (data) {
+                    if (data.success) {
+                        toastr.success(data.message);
+                        datatable.ajax.reload();
+                    }
+                    else {
+                        toastr.error(data.message);
+                    }
+                }
+            });
+        }
     });
 }
