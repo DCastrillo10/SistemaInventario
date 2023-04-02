@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Uk4eHLhaxkiIBKVaN0l1Z6bpR3vHmU2UGosqvd+ZNRc=",
+  "Hash": "ux5+B1cEDRb7hyFnrelnyBrF6+v7/XTcjv4keKTfyr8=",
   "Source": "SistemaInventario",
   "BasePath": "_content/SistemaInventario",
   "Mode": "Default",
@@ -1105,6 +1105,40 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\productos\\1342ff7e-2abd-4f26-8009-8b540cfea7c3.jpg",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "imagenes/productos/1342ff7e-2abd-4f26-8009-8b540cfea7c3.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\productos\\1342ff7e-2abd-4f26-8009-8b540cfea7c3.jpg"
+    },
+    {
+      "Identity": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\imagenes\\productos\\db748ae7-c666-4d40-8d8c-950e66a9613d.jpg",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "imagenes/productos/db748ae7-c666-4d40-8d8c-950e66a9613d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\imagenes\\productos\\db748ae7-c666-4d40-8d8c-950e66a9613d.jpg"
+    },
+    {
       "Identity": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\bodega.js",
       "SourceId": "SistemaInventario",
       "SourceType": "Discovered",
@@ -1154,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\marca.js"
+    },
+    {
+      "Identity": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\producto.js",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "js/producto.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\producto.js"
     },
     {
       "Identity": "F:\\Projects\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\site.js",

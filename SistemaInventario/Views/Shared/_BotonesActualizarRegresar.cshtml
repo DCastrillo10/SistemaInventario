@@ -1,11 +1,7 @@
 ﻿
 @model int
 
-<dvi class="row">
-    <div class="col">
-        <button type="submit" class="btn btn-primary form-control" asp-route-id="@Model">Actualizar</button>
-    </div>
-    <div class="col">
-        <a asp-action="Index" class="btn btn-success form-control">Regresar</a>
-    </div>
+<dvi class="d-grid gap-2 d-md-block">
+    <button type="submit" class="btn btn-primary" asp-route-id="@Model"><i class="bi bi-plus-square-fill"></i>Actualizar</button>
+        <a asp-action="Index" class="btn btn-success"><i class="bi bi-plus-arrow-return-left"></i>Regresar</a>
 </dvi>
