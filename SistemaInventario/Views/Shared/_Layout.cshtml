@@ -36,15 +36,19 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                             </li>
 
-                            <li class="nav-item dropdown"> 
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Contenido
-                                </a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contenido</a>
                                 <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" asp-area="Admin" asp-controller="Bodega" asp-action="Index">Bodegas</a></li>
                                     <li><a class="dropdown-item" asp-area="Admin" asp-controller="Categoria" asp-action="Index">Categorias</a></li>
                                     <li><a class="dropdown-item" asp-area="Admin" asp-controller="Marca" asp-action="Index">Marcas</a></li>
                                     <li><a class="dropdown-item" asp-area="Admin" asp-controller="Producto" asp-action="Index">Productos</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Usuario</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" asp-area="Admin" asp-controller="Usuarios" asp-action="Index">Usuarios</a></li>
                                 </ul>
                             </li>
                     
