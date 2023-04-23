@@ -1,0 +1,8 @@
+"SendGrid": {
+    "SecretKey": "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"
+  }
+
+,
+  "SendGrid": {
+    "SecretKey": "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"
+  }
