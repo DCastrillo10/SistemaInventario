@@ -1,12 +1,16 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SistemaInventario.AccesoDatos.Data;
 using SistemaInventario.AccesoDatos.Repository.IRepository;
 using SistemaInventario.Modelos;
+using SistemaInventario.Utilidades;
+using System.Data;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = DS.Role_Admin)]
     public class CategoriaController : Controller
     {
         private readonly IUnitWork _unitWork;

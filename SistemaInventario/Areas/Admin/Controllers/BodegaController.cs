@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using SistemaInventario.AccesoDatos.Repository.IRepository;
 using SistemaInventario.Modelos;
@@ -7,6 +8,7 @@ using SistemaInventario.Utilidades;
 namespace SistemaInventario.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles =DS.Role_Admin)]
     public class BodegaController : Controller
     {
         private readonly IUnitWork _unitWork;
