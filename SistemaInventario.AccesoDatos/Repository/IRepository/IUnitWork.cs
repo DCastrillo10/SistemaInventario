@@ -13,6 +13,10 @@ namespace SistemaInventario.AccesoDatos.Repository.IRepository
         IMarcaRepository Marca { get; }
         IProductoRepository Producto { get; }
         IUsuarioAplicacionRepository UsuarioAplicacion { get; }
+        IBodegaProductoRepository BodegaProducto { get; }
+        IInventarioRepository Inventario { get; }
+        IInventarioDetalleRepository InventarioDetalle { get; }
+        IKardexInventarioRepository KardexInventario { get; }
         Task Guardar();
 
     }

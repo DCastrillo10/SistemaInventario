@@ -573,3 +573,4 @@ F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Newtonsoft.Json
 F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SendGrid.dll
 F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\StarkbankEcdsa.dll
+F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\libman.json
