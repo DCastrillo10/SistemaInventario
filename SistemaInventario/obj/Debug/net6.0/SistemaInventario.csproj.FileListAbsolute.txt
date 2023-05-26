@@ -574,3 +574,6 @@ F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\System.Diagnost
 F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SendGrid.dll
 F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\StarkbankEcdsa.dll
 F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\libman.json
+F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Rotativa\Windows\wkhtmltoimage.exe
+F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Rotativa\Windows\wkhtmltopdf.exe
+F:\Projects\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Rotativa.AspNetCore.dll

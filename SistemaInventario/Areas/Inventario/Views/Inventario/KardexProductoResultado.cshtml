@@ -16,7 +16,7 @@
         <div class="col-10">
             <div class="row mb-2">
                 <div class="form-group col-md-8 mt-2">
-                    <label><strong class="m-2">Desde:</strong>@Model.FechaIncio.ToShortDateString() <strong class="m-2">Hasta:</strong>@Model.FechaFin.ToShortDateString()</label>
+                    <label><strong class="m-2">Desde:</strong>@Model.FechaInicio.ToShortDateString() <strong class="m-2">Hasta:</strong>@Model.FechaFin.ToShortDateString()</label>
                 </div>
             </div>
             <div class="row mb-2">
@@ -31,8 +31,14 @@
     </div>
 
     <div class="row mb-2">
-        <div class="form-group col-md-3 mt-2">
+        <div class="form-group col-md-6 mt-2">
             <a asp-action="KardexProducto" class="btn btn-primary">Nueva Consulta</a>
+            <a asp-action="ImprimirKardex" 
+               asp-route-fechaInicio="@Model.FechaInicio" asp-route-fechaFinal="@Model.FechaFin" 
+               asp-route-productoId="@Model.Producto.Id"
+               class="btn btn-primary">
+               <i class="bi bi-printer"></i>Imprimir
+            </a>
             <a asp-action="Index" class="btn btn-primary">Salir</a>
         </div>
     </div>

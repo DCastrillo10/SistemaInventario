@@ -12,7 +12,7 @@ namespace SistemaInventario.Modelos.ViewModels
 
         public IEnumerable<KardexInventario> KardexInventarioLista { get; set; }
 
-        public DateTime FechaIncio { get; set; }
+        public DateTime FechaInicio { get; set; }
         public DateTime FechaFin { get; set; }
 
     }
