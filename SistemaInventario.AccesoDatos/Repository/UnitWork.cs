@@ -21,6 +21,8 @@ namespace SistemaInventario.AccesoDatos.Repository
         public IInventarioDetalleRepository InventarioDetalle { get; private set; }
         public IKardexInventarioRepository KardexInventario { get; private set; }
 
+        public ICompaniaRepository Compania { get; private set; }
+
         public UnitWork(ApplicationDbContext db)
         {
             _db = db;
@@ -33,6 +35,7 @@ namespace SistemaInventario.AccesoDatos.Repository
             Inventario = new InventarioRepository(_db);
             InventarioDetalle = new InventarioDetalleRepository(_db);
             KardexInventario = new KardexInventarioRepository(_db);
+            Compania=new CompaniaRepository(_db);
         }
    
         public void Dispose()
